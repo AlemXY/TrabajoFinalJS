@@ -231,9 +231,9 @@ function reiniciarObjeto() {
     citaObj.nombre = '';
     citaObj.correo = '';
     citaObj.telefono = '';
-    citaObj.destino='';
-    citaObj.adultos='';
-    citaObj.ninos='';
+    citaObj.destino= '';
+    citaObj.adultos= '';
+    citaObj.ninos= '';
     citaObj.fecha = '';
     citaObj.fecha2 = '';
     citaObj.hora = '';
@@ -249,15 +249,15 @@ function eliminarCita(id) {
 
 function cargarEdicion(cita) {
 
-    const { nombre, correo, telefono,destino,adultos,ninos,fecha, fecha2, hora, observaciones, id } = cita;
+    const { nombre, correo, telefono, destino, adultos, ninos, fecha, fecha2, hora, observaciones, id } = cita;
 
     // Reiniciar el objeto
     citaObj.nombre = nombre;
     citaObj.correo = correo;
     citaObj.telefono = telefono;
-    citaObj.destino =destino;
-    citaObj.adultos=adultos;
-    citaObj.ninos=ninos;
+    citaObj.destino = destino;
+    citaObj.adultos= adultos;
+    citaObj.ninos= ninos;
     citaObj.fecha = fecha;
     citaObj.fecha2 = fecha2;
     citaObj.hora = hora;
@@ -274,9 +274,9 @@ function cargarEdicion(cita) {
     observacionesInput.value = observaciones;
 
     //llenar los selects
-    destinoSelect.value=destino;
-    adultosSelect.value=adultos;
-    ninosSelect.value=ninos;
+    destinoSelect.value = destino;
+    adultosSelect.value = adultos;
+    ninosSelect.value = ninos;
 
     formulario.querySelector('button[type="submit"]').textContent = 'Guardar Cambios';
 
